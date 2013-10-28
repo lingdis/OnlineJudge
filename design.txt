@@ -1,0 +1,7 @@
+database design
+
+A Table to save the question related basc information. key-question id:qid
+
+A Table to Save the Parameter and Application Java presentation's relationship. key-qid , appType, parameter . Something wrong that me think about it.
+
+A Table to save question's every parameter's specific language type(Java ArrayList or Array, C++ Vector or ArrayList etc) 
