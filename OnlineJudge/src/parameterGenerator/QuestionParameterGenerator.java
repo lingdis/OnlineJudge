@@ -1,15 +1,15 @@
-package test;
+package parameterGenerator;
 
 import java.util.ArrayList;
 
-public abstract class TestGeneric<T> {
+public abstract class QuestionParameterGenerator<T> {
 	
 	public abstract T generate(String str);
 	
 	public static void main(String args[]){
 		System.out.println("here");
 		
-		ArrayList<TestGeneric> list = new ArrayList<TestGeneric>();
+		ArrayList<QuestionParameterGenerator> list = new ArrayList<QuestionParameterGenerator>();
 		
 		list.add(new IntGenerator());
 		list.add(new StringGenerator());

@@ -10,7 +10,6 @@ import java.util.Iterator;
 
 import javax.tools.JavaCompiler;
 import javax.tools.JavaCompiler.CompilationTask;
-import javax.tools.JavaFileManager;
 import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
@@ -34,7 +33,7 @@ public class CompilerTest {
 		StandardJavaFileManager javafile=javac.getStandardFileManager(null, null, null);
 		String filename = "D:/JavaTest.java";
 		String txtFilename = "D:/Test.java";
-		String classFilename = "D:/JavaTest.class";
+		//String classFilename = "D:/JavaTest.class";
 		//编译单元，可以有多个
 		Iterable units=javafile.getJavaFileObjects(filename,filename,txtFilename);
 		
@@ -73,7 +72,7 @@ public class CompilerTest {
 		if(!file.exists()){
 			file.createNewFile();
 		}
-		FileWriter fw=new FileWriter(file);
+		FileWriter fw = new FileWriter(file);
 		fw.write(javaClassContent());
 		fw.close();
 	}

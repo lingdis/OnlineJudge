@@ -1,6 +1,6 @@
-package test;
+package parameterGenerator;
 
-public class StringGenerator extends TestGeneric<String>{
+public class StringGenerator extends QuestionParameterGenerator<String>{
 
 	@Override
 	public String generate(String str) {
