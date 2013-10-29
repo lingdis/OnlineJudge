@@ -17,16 +17,11 @@ public class RawTestCase {
 	//Object rawReturnValue;
 	//make the the returnValue as last of parameters
 	
-	List<StrParameter> strParameters;
-	List<Object> rawParameters;
+	List<RawParameter> rawParameters;
 	
-	
-	public void generateRawParameters(){
+	public List<RawParameter> getRawParameters(){
 		
-		for(int i=0;i<strParameters.size();i++){
-			
-			//QuestionParameterGenerator parameterGenerator = GeneratorFactory.getGenerator(rawParameterTypes.get(i));
-			//parameterGenerator.generate(strParameters.get(i).)
-		}
+		return rawParameters;
 	}
+
 }

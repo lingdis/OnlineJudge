@@ -1,11 +1,19 @@
 package basic;
 
 public class RawParameter {
-
-	String AppType;
-	int RawParameterId;
-	int QuestionId;
-	int RawParameterPos;
 	
+	int testCaseId;
+	int rawParameterSpecificId;
+	String rawParameterStr;
+	Object rawParameterObj;
 	
+	public void setRawParameterObj(Object obj){
+		
+		this.rawParameterObj = obj;
+	}
+	
+	public String getRawParameterStr(){
+		
+		return rawParameterStr;
+	}
 }
