@@ -6,14 +6,29 @@ public class RawParameter {
 	int rawParameterSpecificId;
 	String rawParameterStr;
 	Object rawParameterObj;
-	
-	public void setRawParameterObj(Object obj){
-		
-		this.rawParameterObj = obj;
+	public int getTestCaseId() {
+		return testCaseId;
 	}
-	
-	public String getRawParameterStr(){
-		
+	public void setTestCaseId(int testCaseId) {
+		this.testCaseId = testCaseId;
+	}
+	public int getRawParameterSpecificId() {
+		return rawParameterSpecificId;
+	}
+	public void setRawParameterSpecificId(int rawParameterSpecificId) {
+		this.rawParameterSpecificId = rawParameterSpecificId;
+	}
+	public String getRawParameterStr() {
 		return rawParameterStr;
 	}
+	public void setRawParameterStr(String rawParameterStr) {
+		this.rawParameterStr = rawParameterStr;
+	}
+	public Object getRawParameterObj() {
+		return rawParameterObj;
+	}
+	public void setRawParameterObj(Object rawParameterObj) {
+		this.rawParameterObj = rawParameterObj;
+	}
+	
 }

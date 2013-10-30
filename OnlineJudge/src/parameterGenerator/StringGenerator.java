@@ -9,4 +9,10 @@ public class StringGenerator extends QuestionParameterGenerator<String>{
 		return str;
 	}
 
+	@Override
+	public Class getParameterType() {
+		// TODO Auto-generated method stub
+		return String.class;
+	}
+
 }

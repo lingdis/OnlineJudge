@@ -6,6 +6,9 @@ public abstract class QuestionParameterGenerator<T> {
 	
 	public abstract T generate(String str);
 	
+	public abstract Class getParameterType();
+
+	
 	public static void main(String args[]){
 		System.out.println("here");
 		

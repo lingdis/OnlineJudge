@@ -8,4 +8,10 @@ public class IntGenerator extends QuestionParameterGenerator<Integer>{
 		return Integer.parseInt(str);
 	}
 
+	@Override
+	public Class getParameterType() {
+		// TODO Auto-generated method stub
+		return Integer.class;
+	}
+
 }

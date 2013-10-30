@@ -17,4 +17,10 @@ public class IntListGenerator extends QuestionParameterGenerator<ArrayList<Integ
 		return list;
 	}
 
+	@Override
+	public Class getParameterType() {
+		// TODO Auto-generated method stub
+		return new ArrayList<Integer>().getClass();
+	}
+
 }

@@ -28,7 +28,6 @@ public class RawQuestion {
 			parameterGenerators.add(GeneratorFactory.getGenerator(rawParameterSpecifics.get(i).getAppParameterType()));
 		}
 		for(int i=0;i<rawTestCases.size();i++){
-			
 			RawTestCase testCase = rawTestCases.get(i);
 			List<RawParameter> rawParameters = testCase.getRawParameters();
 			List<Object> testCaseParameterObjs = new ArrayList<Object>();
@@ -39,7 +38,7 @@ public class RawQuestion {
 				testCaseParameterObjs.add(parameterObj);
 				rawParameters.get(j).setRawParameterObj(parameterObj);
 			}
-			
+			testCaseParameterObjsLists.add(testCaseParameterObjs);
 		}
 	}
 	

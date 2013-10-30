@@ -2,8 +2,9 @@ package basic;
 
 public class RawParameterSpecific {
 
+	int rawParameterSpecificId;
 	String appParameterType;
-	int rawParameterId;
+	
 	int questionId;
 	int rawParameterPos;
 	
