@@ -33,9 +33,15 @@ public class MainProcess {
 				
 			}
 			
-			LanguageQuestion languageQuestion = new LanguageQuestion();
+			RawQuestion rawQuestion = rawQuestionCache.get(rawQuestionKey);
+			LanguageQuestion languageQuestion = new LanguageQuestion(languageType,rawQuestion);
+			languageQuestion.generateParameter();
+			languageQuestionCache.put(languageQuestionKey, languageQuestion);
 			
 		}
+		
+		
+		
 		return null;
 	}
 	
